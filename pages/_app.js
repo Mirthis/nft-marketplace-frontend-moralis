@@ -3,7 +3,8 @@ import { MoralisProvider } from 'react-moralis';
 import Header from '../components/header';
 import Head from 'next/head';
 
-const { APP_ID, SERVER_URL } = process.env;
+const APP_ID = process.env.NEXT_PUBLIC_APP_ID;
+const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL;
 
 function MyApp({ Component, pageProps }) {
   return (
